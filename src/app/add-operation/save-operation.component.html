@@ -1,0 +1,95 @@
+<div>
+  <div class="float-left">
+    <div *ngIf="!submitted">
+
+      <div class="form-group" >
+        <label for="customer">Customer</label>
+        <input type="text" class="form-control" id="customer" required [(ngModel)]="operations.customer" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="ccyPair">Ccy pair</label>
+        <input type="text" class="form-control" id="ccyPair" required [(ngModel)]="operations.ccyPair" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="type">Product type</label>
+        <input type="text" class="form-control" id="type" required [(ngModel)]="operations.type" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="style">Style</label>
+        <input type="text" class="form-control" id="style" required [(ngModel)]="operations.style" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="direction">Direction</label>
+        <input type="text" class="form-control" id="direction" required [(ngModel)]="operations.direction" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="strategy">Ccy pair</label>
+        <input type="text" class="form-control" id="strategy" required [(ngModel)]="operations.strategy" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="tradeDate">Trade date</label>
+        <input type="date" class="form-control" id="tradeDate" required [(ngModel)]="operations.tradeDate" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <input type="text" class="form-control" id="amount" required [(ngModel)]="operations.amount" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="rate">Rate</label>
+        <input type="text" class="form-control" id="rate" required [(ngModel)]="operations.rate" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="deliveryDate">Delivery date</label>
+        <input type="text" class="form-control" id="deliveryDate" required [(ngModel)]="operations.deliveryDate" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="expiryDate">Expiry date</label>
+        <input type="text" class="form-control" id="expiryDate" required [(ngModel)]="operations.expiryDate" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="payCcy">Pay ccy</label>
+        <input type="text" class="form-control" id="payCcy" required [(ngModel)]="operations.payCcy" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="premium">Premium</label>
+        <input type="text" class="form-control" id="premium" required [(ngModel)]="operations.premium" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="premiumCcy">Premium ccy</label>
+        <input type="text" class="form-control" id="premiumCcy" required [(ngModel)]="operations.premiumCcy" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="premiumType">Premium type</label>
+        <input type="text" class="form-control" id="premiumType" required [(ngModel)]="operations.premiumType" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="premiumDate">Premium date</label>
+        <input type="text" class="form-control" id="premiumDate" required [(ngModel)]="operations.premiumDate" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="legalEntity">Legal entity</label>
+        <input type="text" class="form-control" id="legalEntity" required [(ngModel)]="operations.legalEntity" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="legalEntity">Trader</label>
+        <input type="text" class="form-control" id="trader" required [(ngModel)]="operations.trader" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="valueDate">Value date</label>
+        <input type="text" class="form-control" id="valueDate" required [(ngModel)]="operations.valueDate" name="title"/>
+      </div>
+      <div class="form-group">
+        <label for="excerciseStartDate">Excercise start date</label>
+        <input type="text" class="form-control" id="excerciseStartDate" required [(ngModel)]="operations.excerciseStartDate" name="title"/>
+      </div>
+
+      <button (click)="saveTOperation()" class="btn btn-success">Submit</button>
+
+    </div>
+
+    <div *ngIf="submitted">
+      <h4>Operation was created</h4>
+      <button class="btn btn-success" (click)="newOperation()">Create a new</button>
+    </div>
+  </div>
+</div>
